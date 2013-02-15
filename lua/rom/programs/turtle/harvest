@@ -1,0 +1,21 @@
+checkInterval = 1
+
+while turtle.place() do -- Plant
+	-- Wait for it to grow on its own
+	while turtle.compare() do
+		os.sleep(checkInterval)
+	end
+
+	-- Harvest
+	while turtle.detect() do
+		turtle.dig()
+		turtle.digUp()
+		turtle.up()
+	end
+
+	-- Return back down
+	while turtle.down() do
+	end
+end
+
+print( fs.getName(shell.getRunningProgram()) .. " finished" )
