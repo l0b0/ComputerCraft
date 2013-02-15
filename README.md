@@ -1,4 +1,4 @@
 ComputerCraft
 =============
 
-Programs for ComputerCraft
+Programs for [ComputerCraft](http://www.computercraft.info/).
