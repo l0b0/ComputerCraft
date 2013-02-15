@@ -11,11 +11,11 @@ while turtle.place() do -- Plant
 
 	-- Harvest
 	turtle.select(firstOutputSlot)
-	while turtle.compare() do
+	repeat
 		turtle.dig()
 		turtle.digUp()
 		turtle.up()
-	end
+	until not turtle.compare()
 	turtle.select(saplingSlot)
 
 	-- Return back down
